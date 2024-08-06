@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+            justify-content: flex-start;
+        }
+        .event-container {
+            background-color:#E8F9F7;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(167, 207, 229, 0.3);
+            width: 100%;
+            margin-bottom: 70px;
+            margin-top: 50px;
+          
+        }
+        .event-heading h1{
+            text-align: center;
+            color: #00baa3;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin: 0 0 15px;
+        }
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+        }
+        .nav-list li {
+            margin-right: 10px;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color:#000;
+            font-weight: bold;
+        }
+        .nav-list a.active {
+            color: #00baa3; 
+        }
+        .blog-area.pt-100.pb-100 {
+    padding: 60px 0;
+}
+.container {
+    width: 450px;
+}
+.row {
+    margin-right: calc(var(--bs-gutter-x) * -.6);
+    margin-left: calc(var(--bs-gutter-x) * -.6);
+}
+.row > * {
+    position: relative;
+    padding-right: calc(var(--bs-gutter-x) * .6);
+    padding-left: calc(var(--bs-gutter-x) * .6);
+}
+.single-blog {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+.blog-img > a {
+    display: block;
+}
+.blog-img img {
+    transition: all 0.3s ease-in-out;
+}
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+.img-full img {
+    width: 100%;
+}
+.blog-content {
+    padding: 0 20px;
+    padding-bottom: 25px;
+}
+.meta {
+    padding: 5px 20px;
+    background-color: #fffaeb;
+    margin: 0 -20px;
+}
+.blog-content ul.meta li {
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: #252525;
+    font-family: 'Droid Serif';
+    position: relative;
+    margin-right: 35px;
+}
+a {
+    outline: medium none;
+    color: #434343;
+}
+a, button {
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+}
+.blog-content ul.meta li:last-child {
+    margin-right: 0;
+}
+.blog-content h4.title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.h4{
+    font-family: 'Droid Serif';
+    font-style: normal;
+}
+.blog-content > a {
+    margin-top: 5px;
+    font-size: 15px;
+}
+.blog-content > a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #252525;
+    text-decoration: underline;
+    line-height: 26px;
+    font-family: 'Droid Serif';
+}
+.blog-content {
+    padding: 0 20px;
+    padding-bottom: 25px;
+}
+.single-blog {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.row {
+    margin-right: calc(var(--bs-gutter-x) * -.6);
+    margin-left: calc(var(--bs-gutter-x) * -.6);
+}
+.row > * {
+    position: relative;
+    padding-right: calc(var(--bs-gutter-x) * .6);
+    padding-left: calc(var(--bs-gutter-x) * .6);
+}
+.blog-area .product-pagination > ul {
+    padding-top: 0;
+}
+.product-pagination > ul {
+    text-align: center;
+    
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.product-pagination > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 5px;
+}
+product-pagination > ul > li.active > a, .product-pagination > ul > li > a:hover {
+    background: #00baa3;
+    border-color: #00baa3;
+    color: #fff;
+}
+.product-pagination > ul > li > a {
+    height: 30px;
+    line-height: 28px;
+    width: 30px;
+}
+.product-pagination > ul > li > a {
+    background: #fff;
+    border: 1px solid #ededed;
+    color: #222;
+    font-size: 15px;
+    display: block;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    min-width: 0;
+    padding: 0 8px;
+    text-align: center;
+    width: 42px;
+}
+a, button, input {
+    outline: medium none;
+    color: #434343;
+}
+a, button {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+        </style>
+        <body>
+            <div class="event-container">
+                <div class="event-heading">
+                  <h1>Blog</h1>
+                  <ul class="nav-list">
+                    <li>
+                      <a href="file:///C:/Users/user/OneDrive/Desktop/Astha/index.html">Home</a>
+                    </li>
+                    <li>
+                      <span>/</span>
+                    </li>
+                    <li>
+                      <a class="active">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog-area pt-100 pb-100">
+                <div class="container">
+                    <div class="row">
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog1.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 25 Oct, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Marathon compitition for fund rising</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog2.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 12 Nov, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Africa children need more food</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog3.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 15 Apr, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Africa children water and clothes</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog4.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 25 Feb, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">How to use international network</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog5.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 25 Oct, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Africa children run the runway</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog6.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 12 Nov, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Nearly 200 million children</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog7.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 15 Apr, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Africa children the world were abused</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                        <!--Single Blog Start-->
+                        <div class="col-lg-6 col-xl-3 col-md-6">
+                            <div class="single-blog mb-30">
+                                <div class="blog-img img-full">
+                                    <a href="single-blog.html"><img src="blog8.webp" alt=""></a>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="meta">
+                                        <li>By <a href="#">Jenifer</a></li>
+                                        <li>&#9632; 25 Feb, 2018 </li>
+                                    </ul>
+                                    <h4 class="title"><a href="single-blog.html">Marathon compitition for fund rising</a></h4>
+                                    <a href="single-blog.html">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single Blog End-->
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <!--Pagination Start-->
+                            <div class="product-pagination">
+                                <ul>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right">&raquo;</i></a></li>
+                                </ul>
+                            </div>
+                            <!--Pagination End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
