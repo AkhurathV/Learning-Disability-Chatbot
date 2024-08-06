@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<head>
+    <title>Home page of Astha</title>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 100%;
+    color: #151515;
+    
+}
+        .header-logo {
+    padding: 6px 0;
+    position: relative;
+    margin-left: 350px;
+}
+.header-logo > a {
+    display: block;
+    margin: 15px 0;
+}
+.main-menu > li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.main-menu > li.active > a, .main-menu > li:hover > a {
+    color: #00baa3;
+    display: inline;
+
+
+}
+.main-menu > li > a {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 30px 8px;
+    display: block;
+    color:#202020;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.button, input {
+    outline: medium none;
+    color: #434343;
+}
+a, button {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.main-menu > li > ul > li {
+    display: block;
+    padding: 0 18px;
+    position: relative;
+}
+.main-menu > li > ul {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    display: block;
+    position: absolute;
+    text-align: left;
+    top: 120%;
+    width: 220px;
+    z-index: 999;
+    visibility:hidden;
+
+}
+
+.main-menu > li > ul > li > a {
+    color: #373537;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 32px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.book-now-btn {
+    padding: 20px 0;
+}
+.book-now-btn a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #202020;
+    text-transform: uppercase;
+    background-color: #efc94c;
+    border: 1px solid #efc94c;
+    padding: 6px 30px;
+    height: 30px;
+    border-radius: 50px;
+    line-height: 30px;
+    display: inline-block;
+    box-shadow: 0px 2px 8px rgba(1,1,1,0.4);
+}
+.header-sticky {
+    transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+}
+.container {
+    padding-right: var(--bs-gutter-x,.90rem);
+    padding-left: var(--bs-gutter-x,.90rem);
+}
+.container {
+    max-width: 1200px;
+}
+.row {
+    margin-right: calc(var(--bs-gutter-x) * -.6);
+    margin-left: calc(var(--bs-gutter-x) * -.6);
+}
+::selection {
+    background: #3399FF;
+    color: #fff;
+    text-shadow: none;
+}
+.row > * {
+    position: relative;
+    padding-right: calc(var(--bs-gutter-x) * .6);
+    padding-left: calc(var(--bs-gutter-x) * .6);
+}
+.header-menu-area{
+    display: block;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.main-menu > li > a:first-child {
+    padding-right: 0;
+}
+.main-menu > li > ul > li > a:before {
+    background: #00baa3 none repeat scroll 0 0;
+    content: "";
+    height: 7px;
+    left: 15px;
+    opacity: 0;
+    position: absolute;
+    top: 14px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 7px;
+    border-radius: 50%;
+    z-index: 999;
+}
+.main-menu > li > a:last-child {
+    padding-right: 0px;
+}
+.mobile-menu {
+    -webkit-box-flex: 1 !important;
+}
+.header {
+    display: block;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+.owl-height {
+    transition: height .5s ease-in-out;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+    touch-action: manipulation;
+}
+.owl-carousel.owl-drag .owl-item {
+    touch-action: pan-y;
+    user-select: none;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+}
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+    -webkit-transform: translate3d(0,0,0);
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.single-slider {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 830px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+}
+.single-slider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: -1;
+}
+.hero-slider-content {
+    max-width: 550px;
+    text-align: left;
+}
+.hero-slider-content > h1 {
+    font-size: 70px;
+    color: #f1d168;
+    font-weight: 700;
+    line-height: 80px;
+}
+.hero-slider-content > * {
+    
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeOut;
+}
+h1 {
+    font-family: 'Droid Serif';
+    margin-top: 0px;
+    font-style: normal;
+}
+.default-btn {
+    line-height: 49px;
+    padding: 0 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #efc94c;
+    color: #202020;
+    display: inline-block;
+    margin-top: 15px;
+    -webkit-box-shadow: none;
+    cursor: pointer;
+    height: 50px;
+    border: 1px solid #efc94c;
+    border-radius: 50px;
+}
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.owl-height {
+    transition: height .5s ease-in-out;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}
+ .owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    user-select: none;
+}
+.hero-slider .owl-nav > button {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: #fff !important;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 26px !important;
+    color: #363636 !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.fa-angle-left:before {
+    content: "\f104";
+}
+.hero-slider .owl-nav > .owl-next {
+    left: auto;
+    right: 30px;
+}
+.fa-angle-right:before {
+    content: "\f105";
+}
+.hero-slider .owl-dots {
+    position: absolute;
+}
+.owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}
+.owl-carousel {
+    cursor: pointer;
+    user-select: none;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.fix {
+    overflow: hidden;
+}
+.coustom-row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.coustom-row .single-feature {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.single-feature-inner {
+    padding: 70px 80px;
+    text-align: center;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}
+.single-feature-inner::before {
+    background-color: #00baa3;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: skew(-10deg) translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+.feature-area .single-feature:nth-child(1) .single-feature-inner h2 {
+    max-width: 395px;
+}
+.single-feature-inner h2 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 700;
+}
+ h2 {
+    font-family: 'Droid Serif';
+    margin-top: 0px;
+    font-style: normal;
+   
+}
+.single-feature-inner h2 span.text-underline {
+    text-decoration: underline;
+}
+.feature-area .single-feature:nth-child(1) .single-feature-inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00baa3;
+    z-index: -1;
+}
+.feature-area .single-feature:nth-child(2) .single-feature-inner::before {
+    background-color: #efc94c;
+}
+.feature-area .single-feature:nth-child(2) .single-feature-inner h2 {
+    margin-left: 35px;
+    color: #d55342;
+}
+.feature-area .single-feature:nth-child(3) .single-feature-inner::before {
+    background-color: #d55342;
+}
+.service-area {
+    background-image: url(bg1.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    padding-bottom: 65px;
+    position: relative;
+    z-index: 9;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.service-section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.service-section-title h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+ h3 {
+    font-family: 'Droid Serif';
+    color: #252525;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+}
+.service-section-title p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    max-width: 565px;
+}
+p {
+    margin-bottom: 15px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+    margin-left:40px;
+}
+.single-service h2.service-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+.single-service p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    max-width: 240px;
+    margin-bottom: 0;
+}
+.service-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.service-image img {
+    width: 100%;
+}
+.pt-115 {
+    padding-top: 100px;
+    
+}
+.mb-60 {
+    margin-bottom: 60px;
+    margin-left: 450px;
+}
+.section-title {
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    background-image: url(section-title1.webp);
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    z-index: -1;
+}
+.section-title p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 535px;
+}
+.single-causes-area {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.causes-feature {
+    text-align: center;
+}
+ul {
+    margin:0px;
+    padding:0px;
+}
+.causes-feature ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 14px;
+}
+.causes-feature ul li::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 0;
+    width: 1px;
+    height: 35px;
+    background-color: #b7b7b7;
+}
+.causes-feature ul li span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.causes-feature ul li span.per-count {
+    font-size: 15px;
+    font-weight: 600;
+}
+.causes-feature ul li:nth-child(2) span {
+    color: #d55342;
+}
+a, button, input {
+    outline: medium none;
+    color: #434343;
+}
+.img-full img {
+    width: 100%;
+}
+.casues-content {
+    padding: 30px 20px;
+}
+.casues-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.casues-content h3 a {
+    display: block;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
+.casues-content p {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+}
+p {
+    margin-bottom: 15px;
+}
+.container {
+    max-width: 1200px;
+}
+.pt-60 {
+    padding-top: 60px;
+}
+.donation-image {
+    margin-left: -180px;
+}
+.donation-image img {
+    max-width: 100%;
+}
+.donet-product {
+    margin-right: -80px;
+}
+.row {
+    margin-right: calc(var(--bs-gutter-x) * -.6);
+    margin-left: calc(var(--bs-gutter-x) * -.6);
+}
+.donet-shop {
+    margin-left: -130px;
+    text-align: right;
+    padding-top: 26px;
+}
+.donet-shop h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.donet-shop p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+p {
+    margin-bottom: 15px;
+}
+.donet-shop a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #202020;
+    text-decoration: underline;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.slick-slider {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list, .slick-slider, .slick-track {
+    position: relative;
+    display: block;
+}
+.event-slider .slick-arrow {
+    background: #00baa3 none repeat scroll 0 0;
+    border: none;
+    color: #fff;
+    font-size: 34px;
+    height: 80px;
+    position: absolute;
+    font-weight: 400;
+    bottom: 0;
+    right: 55px;
+    width: 65px;
+    z-index: 9;
+    cursor: pointer;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.fa-angle-left:before {
+    content: "\f104";
+}
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track:after, .slick-track:before {
+    display: table;
+    content: '';
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.img-full img {
+    width: 100%;
+}
+
+.slick-slide img {
+    display: block;
+}
+.event-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+.event-content p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #d55342;
+    font-family: 'Droid Serif';
+    margin-bottom: 0;
+}
+.pl-60 {
+    padding-left: 60px;
+}
+.section-title {
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.section-title.text-left h2::before {
+    margin: 0;
+}
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    background-image: url(section-title1.webp);
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+}
+.fun-bg {
+    background: url(bg2\ \(2\).webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 85px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 99;
+}
+.content-between .col {
+    flex-grow: 0;
+    white-space: nowrap;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.fun-facttor-number > h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #252525;
+}
+.counter-title {
+    font-size: 18px;
+    color: #252525;
+    line-height: 26px;
+    margin: 0;
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.pt-115 {
+    padding-top: 115px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.section-title p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 535px;
+}
+.single-blog {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+.blog-img > a {
+    display: block;
+}
+.blog-img > a::before {
+    background-color: rgba(0,0,0,0.2);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+    transition: all .3s ease-out 0s;
+}
+.blog-content {
+    padding: 0 20px;
+    padding-bottom: 25px;
+}
+.meta {
+    padding: 5px 20px;
+    background-color: #fffaeb;
+    margin: 0 -20px;
+}
+.blog-content ul.meta li {
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: #252525;
+    font-family: 'Droid Serif';
+    position: relative;
+    margin-right: 35px;
+}
+.blog-content ul.meta li::after {
+    content: "";
+    position: absolute;
+    right: -22px;
+    top: 12px;
+    height: 7px;
+    width: 7px;
+    background-color: #d55342;
+}
+.blog-content ul.meta li:last-child {
+    margin-right: 0;
+}
+.blog-content ul.meta li {
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: #252525;
+    font-family: 'Droid Serif';
+    position: relative;
+}
+.blog-content h4.title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.blog-content > a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #252525;
+    text-decoration: underline;
+    line-height: 26px;
+    font-family: 'Droid Serif';
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.owl-carousel .owl-stage {
+    position: relative;
+    touch-action: manipulation;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.black-bg {
+    background: #1c1c1e;
+}
+.pb-45 {
+    padding-bottom: 45px;
+}
+.pt-80 {
+    padding-top: 80px;
+}
+.footer-logo img {
+    margin-bottom: 25px;
+}
+.single-footer-widget > p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d6d3d3;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.newslatter-title {
+    font-size: 18px;
+    color: #d6d3d3;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.single-footer-widget form {
+    position: relative;
+    max-width: 300px;
+}
+.single-footer-widget form input {
+    border: 1px solid #363636;
+    font-size: 14px;
+    color: #f9f9f9;
+    line-height: 25px;
+    font-weight: 300;
+    height: 40px;
+    padding-right: 70px;
+    background-color: #363636;
+}
+input {
+    padding-left: 10px;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+}
+.single-footer-widget form button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65px;
+    height: 40px;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #d6d3d3;
+    cursor: pointer;
+    background-color: #272727;
+    line-height: 24px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.footer-title {
+    font-size: 24px;
+    color: #d6d3d3;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    line-height: 24px;
+}
+.single-footer-widget ul > li {
+    list-style: none;
+}
+.single-footer-widget ul > li > a {
+    color: #d6d3d3;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 24px;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.single-footer-widget > p.ft-address {
+    max-width: 200px;
+}
+.single-footer-widget > p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d6d3d3;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.single-footer-widget > p span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #d9d6d6;
+    margin-bottom: 6px;
+}
+.single-footer-widget > p.ft-contact-info > a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d6d3d3;
+    display: inline-block;
+}
+.footer-bottom-area {
+    background-color: #111111;
+}
+.pb-20 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer-bottom-area p {
+    font-size: 12px;
+    color: #d6d3d3;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+.footer-bottom-area p a {
+    color: #d6d3d3;
+}
+.row0{
+display: flex;
+} 
+.row{
+    display: flex;
+} 
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="default-header-area header-sticky">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="logo (1).webp" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7  d-none d-lg-block text-end"> 
+                        <div class="header-menu-area">
+                            <nav style="display: block;">
+                                <ul class="main-menu">
+                                    <li class="active"><a href="index.html">HOME</a>
+                                        <ul>
+                                            <li><a href="index.html">Home Page 1</a></li>
+                                            <li><a href="index-2.html">Home Page 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="Home Page 2.html">LEARNING DISABILITY</a>
+                                        <ul>
+                                            <li><a href="couses details.html">Causes Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="event.html">EVENTS</a>
+                                       
+                                        <ul>
+                                            <li><a href="event-three-column.html">Event Three Column</a></li>
+                                            <li><a href="event-details.html">Event Details</a></li>
+                                        </ul>
+                                    
+                                    </li>
+                                    <li><a href="blog.html">BLOG</a>
+                                
+                                        <ul>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="single-blog.html">Blog details</a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                        </ul>
+                                        
+                                    </li>                                
+                                    </li>
+                                    <li><a href="Event Details1.html">PAGES</a>
+                                      
+                                        <ul>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="volunteer.html">Volunteer</a></li>
+                                            <li><a href="volunteer-details.html">Volunteer Details</a></li>
+                                            <li><a href="become-volunteer.html">Become Volunteer</a></li>
+                                            <li><a href="gallery.html">Gallery</a></li>
+                                            <li><a href="gallery-filtering.html">Gallery Filtering</a></li>
+                                            <li><a href="gallery-full-width.html">Gallery Full Width</a></li>
+                                            <li><a href="gallery-masonry.html">Gallery Masonry</a></li>
+                                            <li><a href="donet.html">Donet</a></li>
+                                        </ul>
+                                 
+                                    </li>
+                                    <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                  
+                   
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-12">  
+            <div class="mobile-menu d-lg-none d-xl-none"></div>
+        </div>
+    </header>
+    <div class="slider-area">
+        <div class="hero-slider owl-carousel owl-loaded owl-drag">
+        <div class="owl-stage-outer owl-height" style="height: 830px;"><div class="owl-stage" style="transform: translate3d(-3038px, 0px, 0px); transition: all 0s ease 0s; width: 9116px;"><div class="owl-item cloned" style="width: 1519.2px;"><div class="single-slider" style="background-image: url(slide2-home-1.webp)"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slider-content">
+                                <h1>Small help together makes better life</h1>
+                                <div class="slider-btn">
+                                    <a class="default-btn" href="Home Page 2.html">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1519.2px;"><div class="single-slider" style="background-image: url(slide1-home-1.webp)">   
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slider-content">
+                                <h1>Let's teach them letter, the world will be better</h1>
+                                <div class="slider-btn">
+                                    <a class="default-btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item active" style="width: 1519.2px;"><div class="single-slider" style="background-image: url(slide2-home-1.webp)"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slider-content">
+                                <h1>Small help together makes better life</h1>
+                                <div class="slider-btn">
+                                    <a class="default-btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item" style="width: 1519.2px;"><div class="single-slider" style="background-image: url(slide2-home-1.webp)">   
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slider-content">
+                                <h1>Let's teach them letter, the world will be better</h1>
+                                <div class="slider-btn">
+                                    <a class="default-btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1519.2px;"><div class="single-slider" style="background-image: url(slide1-home-2.webp)"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slider-content">
+                                <h1>Small help together makes better life</h1>
+                                <div class="slider-btn">
+                                    <a class="default-btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div><div class="owl-item cloned" style="width: 1519.2px;"><div class="single-slider" style="background-image: url(slide1-home-1.webp)">   
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slider-content">
+                                <h1>Let's teach them letter, the world will be better</h1>
+                                <div class="slider-btn">
+                                    <a class="default-btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+    </div>
+    <div class="feature-area fix mb-10">
+        <div class="container-fluid p-0">
+            <div class="row coustom-row">
+                <div class="single-feature col-md-4">
+                    <div class="single-feature-inner" style="height: 400px;">
+                        <h2>Emotional Disabilities<span class="text-underline">IQ</span> and help the humaity</h2>
+                    </div>
+                   
+                </div>
+                <div class="single-feature col-md-4">
+                   
+                    <div class="single-feature-inner" style="height: 400px;">
+                                    <li><a href="Home Page 2.html">LEARNING DISABILITY</a>
+                        <h2>Learning Disabilities <span class="text-underline">Detection</span><a href="Home Page 2.html">Detection</a> </h2>
+                    </div>
+                  
+                </div>
+                <div class="single-feature col-md-4">
+                   
+                    <div class="single-feature-inner" style="height: 400px;">
+                        <h2>Our Latest <span class="text-underline">Achivement Fund’s</span> $3,85,65,250 <span class="text-underline">Member’s</span> 50,000</h2>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="service-section-title mb-40">
+                                <h2>What we do</h2>
+                                <h3>Always try to do better for humanity</h3>
+                                <p>Pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                          
+                            <div class="single-service mb-30">
+                                <h2 class="service-title">Students develop emotional</h2>
+                                <p>
+                                    Students develop emotional intelligence skills through AI simulations, feedback, and strategies for better interactions</p>
+                            </div>
+                         
+                        </div>
+                        <div class="col-md-6">
+                            
+                            <div class="single-service mb-30">
+                                <h2 class="service-title">Building the skills</h2>
+                                <p>Building the skills necessary for emotional intelligence requires practice, feedback, and guided learning experiences.</p>
+                            </div>
+                         
+                        </div>
+                        <div class="col-md-6">
+                           
+                            <div class="single-service mb-30">
+                                <h2 class="service-title">Become a Volunteer</h2>
+                                <p>Pursue pleasure rationally counter consequences that are extremely painful. Nor again is here</p>
+                            </div>
+                          
+                        </div>
+                        <div class="col-md-6">
+                           
+                            <div class="single-service mb-30">
+                                <h2 class="service-title">Social scenarios</h2>
+                                <p>AI simulates diverse social scenarios to help students practice and improve interpersonal interactions.</p>
+                            </div>
+                          
+                        </div>
+                        <div class="col-md-6">
+                           
+                            <div class="single-service mb-30">
+                                <h2 class="service-title">Improving interpersonal interactions</h2>
+                                <p>
+                                    AI strategies aid in improving interpersonal interactions by enhancing emotional awareness and communication skills.</p>
+                            </div>
+                           
+                        </div>
+                        <div class="col-md-6">
+                         
+                            <div class="single-service mb-30">
+                                <h2 class="service-title">Protect Environment</h2>
+                                <p>Pursue pleasure rationally counter consequences that are extremely painful. Nor again is here</p>
+                            </div>
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-image">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="project-area pt-70 mb-5">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters project-active owl-carousel owl-loaded owl-drag">
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2126px, 0px, 0px); transition: all 0.25s ease 0s; width: 4558px;"><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em11.jpeg" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em12.png" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em13.jpeg" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="project4.webp" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="project5.webp" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em11.jpeg" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em12.png" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item active" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em13.jpeg" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item active" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="project4.webp" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item active" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="project5.webp" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned active" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em11.jpeg" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned active" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em12.png" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="em13.jpeg" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="project4.webp alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div><div class="owl-item cloned" style="width: 303.84px;"><div class="col-12">
+                    <!--Single Project Start-->
+                    <div class="single-project img-full">
+                        <a href="#"><img src="project5.webp" alt=""></a>
+                    </div>
+                    <!--Single Project End-->
+                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!--Footer Top Area Start-->
+            <div class="footer-top-area black-bg pt-80 pb-45">
+                <div class="container">
+                    <div class="row0 justify-content-between">
+                        <!--Single Footer Widget Start-->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-footer-widget mb-30">
+                                <a class="footer-logo" href="index.html"><img src="logo (1) (1).webp" alt=""></a>
+                                <p>Pursue pleasure rationally encounter consequences that treme painful. Nor again is there anyone obtain pain </p>
+                                <h4 class="newslatter-title">Newsletter</h4>
+                                <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate="">
+                                   <div id="mc_embed_signup_scroll">
+                                      <div id="mc-form" class="mc-form subscribe-form">
+                                        <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email">
+                                        <button id="mc-submit">SEND</button>
+                                      </div>
+                                   </div>
+                               </form>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                        <!--Single Footer Widget Start-->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-footer-widget mb-30 footer-menu">
+                                <h3 class="footer-title">Quick Links</h3>
+                                <ul>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="service.html">Causes</a></li>
+                                    <li><a href="service.html">Events</a></li>
+                                    <li><a href="service.html">Blog</a></li>
+                                    <li><a href="appointment.html">Pages</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                        <!--Single Footer Widget Start-->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-footer-widget mb-30 footer-menu">
+                                <h3 class="footer-title">Information</h3>
+                                <ul>
+                                    <li><a href="about.html">Our Volunteer</a></li>
+                                    <li><a href="service.html">Donation</a></li>
+                                    <li><a href="service.html">Login/Register</a></li>
+                                    <li><a href="appointment.html">Support</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                        <!--Single Footer Widget Start-->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="single-footer-widget mb-30 footer-menu">
+                                <h3 class="footer-title">Contact Info</h3>
+                                <p class="ft-address"><span>Address:</span>245 Central Tower, 4th Floow New City, California, USA</p>
+                                <p class="ft-contact-info ds-inline">
+                                    <span>Call us:</span>
+                                    <a href="#">+12546 658 987</a>,
+                                    <a href="#">+12548 789 987</a>
+                                </p>
+                                <p class="ft-contact-info">
+                                    <span>Web:</span>
+                                    <a href="#">info@example.com</a>
+                                    <a href="#">www.example.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                </div>
+            </div>
+            <!--Footer Top Area End-->
+            <!--Footer Bottom Area Start-->
+            <div class="footer-bottom-area pt-20 pb-20">
+                <div class="container text-center">
+                   <p><span>©</span> Copyright, All right reserved by <a href="#">Astha</a> - 2018</p>
+                </div>
+            </div>
+            <!--Footer Bottom Area End-->
+        </div>
+    </footer>
+    <!--Footer Area End-->
+</div>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "1003de4a-94ab-40d7-905e-9cd0841ad374", // The ID of this integration.
+      region: "jp-tok", // The region your integration is hosted in.
+      serviceInstanceID: "5b94ec77-33b2-4483-9b74-f1baf7e720e8", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+
+
+   
+
+</body>
+</html>
